@@ -1,0 +1,2 @@
+SELECT Students.FirstName,Students.LastName,Students.Age FROM Students
+WHERE Students.Age>( SELECT AVG(Students.Age) FROM Students);

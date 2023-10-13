@@ -1,0 +1,5 @@
+SELECT Students.StudentID,Students.FirstName,Students.LastName, Courses.CourseName 
+FROM Students 
+JOIN Courses
+ON Students.CourseID =Courses.CourseID
+WHERE Students.CourseID=105;

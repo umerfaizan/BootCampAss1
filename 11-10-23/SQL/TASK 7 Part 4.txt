@@ -1,0 +1,3 @@
+SELECT Students.CourseID , COUNT(Students.FirstName) AS TOTAL_NO_OF_STUDENTS ,AVG(Students.Age) AS AVG_AGE_STUDENTS
+FROM Students
+GROUP By Students.CourseID;

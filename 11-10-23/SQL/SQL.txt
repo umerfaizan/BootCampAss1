@@ -1,0 +1,41 @@
+  
+CREATE TABLE Students(
+StudentID INT PRIMARY KEY,
+FirstName VARCHAR(50),
+LastName VARCHAR(50),
+AGE INT,
+CourseID INT,
+FOREIGN KEY (CourseID) REFERENCES Courses(CourseID)
+);
+CREATE TABLE Courses(
+CourseID INT PRIMARY KEY,
+CourseName VARCHAR(50)
+);
+INSERT INTO Courses 
+VALUES
+(100,'MATHS'),
+(101,'BIOLOGY'),
+(102,'CHEMISTRY'),
+(103,'PHYSICS'),
+(104,'ENGLISH');
+INSERT INTO Students
+VALUES
+(1,'Umer','Faizan',24,100),
+(2,'Rana','Yasir',29,100),
+(3,'Aima,"Ameen',14,101),
+(4,'Yasmeen','Manzoor',19,101),
+(5,'Shagufta','Rana',17,102),
+(6,'Aneeka','Yousaf',18,102),
+(7,'Mirza','Ans',26,103),
+(8,'Chachu','Iftkihar',29,103),
+(9,'Babar','Azam',26,104),
+(10,'RIZI','Boi',21,104);
+
+UPDATE Students
+SET Age=31
+WHERE StudentID=8;
+
+DELETE FROM Students
+WHERE StudentID=8;
+
+SELECT * FROM Students WHERE Age>20;

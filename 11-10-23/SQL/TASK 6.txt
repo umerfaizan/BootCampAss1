@@ -1,0 +1,6 @@
+SELECT COUNT(Students.StudentID)
+FROM Students;
+SELECT AVG(Students.Age)
+FROM Students;
+SELECT SUM(Students.Age)
+FROM Students;

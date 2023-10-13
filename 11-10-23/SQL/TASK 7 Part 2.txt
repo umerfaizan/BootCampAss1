@@ -1,0 +1,4 @@
+SELECT TOP 1 Students.CourseID,COUNT(Students.CourseID) AS REPEAT_TIME
+FROM Students
+GROUP BY Students.CourseID
+ORDER BY Students.CourseID DESC;

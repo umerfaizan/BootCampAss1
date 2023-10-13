@@ -1,0 +1,8 @@
+INSERT INTO Students
+VALUES
+(10,'She','he',27,NULL),
+(11,'She','he',28,NULL),
+(12,'She','he',29,NULL);
+
+SELECT Students.FirstName , Students.LastName FROM Students
+WHERE Students.CourseID IS NULL;
